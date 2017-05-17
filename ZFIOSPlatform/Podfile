@@ -1,0 +1,11 @@
+platform :ios, ‘8.0’
+
+use_frameworks!
+target 'ZFIOSPlatform' do
+
+pod 'ReactObjC'
+pod 'YYModel'
+pod 'AFNetworking'
+pod 'SDWebImage'
+
+end

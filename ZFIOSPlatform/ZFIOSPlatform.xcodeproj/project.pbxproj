@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		186886611ECBF0830094C2DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 186886601ECBF0830094C2DC /* main.m */; };
+		186886641ECBF0830094C2DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 186886631ECBF0830094C2DC /* AppDelegate.m */; };
+		186886671ECBF0830094C2DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186886661ECBF0830094C2DC /* ViewController.m */; };
+		1868866A1ECBF0830094C2DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186886681ECBF0830094C2DC /* Main.storyboard */; };
+		1868866D1ECBF0830094C2DC /* ZFIOSPlatform.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1868866B1ECBF0830094C2DC /* ZFIOSPlatform.xcdatamodeld */; };
+		1868866F1ECBF0830094C2DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1868866E1ECBF0830094C2DC /* Assets.xcassets */; };
+		186886721ECBF0830094C2DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186886701ECBF0830094C2DC /* LaunchScreen.storyboard */; };
+		1868867D1ECBF0830094C2DC /* ZFIOSPlatformTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868867C1ECBF0830094C2DC /* ZFIOSPlatformTests.m */; };
+		186886881ECBF0840094C2DC /* ZFIOSPlatformUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 186886871ECBF0840094C2DC /* ZFIOSPlatformUITests.m */; };
+		45F8B2C4348E76FC2E571BE3 /* Pods_ZFIOSPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F11A8BEC274AFB4D981498F2 /* Pods_ZFIOSPlatform.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		186886791ECBF0830094C2DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 186886541ECBF0830094C2DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1868865B1ECBF0830094C2DC;
+			remoteInfo = ZFIOSPlatform;
+		};
+		186886841ECBF0840094C2DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 186886541ECBF0830094C2DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1868865B1ECBF0830094C2DC;
+			remoteInfo = ZFIOSPlatform;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1868865C1ECBF0830094C2DC /* ZFIOSPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZFIOSPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		186886601ECBF0830094C2DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		186886621ECBF0830094C2DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		186886631ECBF0830094C2DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		186886651ECBF0830094C2DC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		186886661ECBF0830094C2DC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		186886691ECBF0830094C2DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1868866C1ECBF0830094C2DC /* ZFIOSPlatform.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZFIOSPlatform.xcdatamodel; sourceTree = "<group>"; };
+		1868866E1ECBF0830094C2DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		186886711ECBF0830094C2DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		186886731ECBF0830094C2DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		186886781ECBF0830094C2DC /* ZFIOSPlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZFIOSPlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1868867C1ECBF0830094C2DC /* ZFIOSPlatformTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFIOSPlatformTests.m; sourceTree = "<group>"; };
+		1868867E1ECBF0840094C2DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		186886831ECBF0840094C2DC /* ZFIOSPlatformUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZFIOSPlatformUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		186886871ECBF0840094C2DC /* ZFIOSPlatformUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFIOSPlatformUITests.m; sourceTree = "<group>"; };
+		186886891ECBF0840094C2DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		572F6762BB572668B7FBE264 /* Pods-ZFIOSPlatform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFIOSPlatform.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZFIOSPlatform/Pods-ZFIOSPlatform.debug.xcconfig"; sourceTree = "<group>"; };
+		DFAD6C3FF7827F9E45DF74B1 /* Pods-ZFIOSPlatform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFIOSPlatform.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZFIOSPlatform/Pods-ZFIOSPlatform.release.xcconfig"; sourceTree = "<group>"; };
+		F11A8BEC274AFB4D981498F2 /* Pods_ZFIOSPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZFIOSPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		186886591ECBF0830094C2DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45F8B2C4348E76FC2E571BE3 /* Pods_ZFIOSPlatform.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		186886751ECBF0830094C2DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		186886801ECBF0840094C2DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		186886531ECBF0830094C2DC = {
+			isa = PBXGroup;
+			children = (
+				1868865E1ECBF0830094C2DC /* ZFIOSPlatform */,
+				1868867B1ECBF0830094C2DC /* ZFIOSPlatformTests */,
+				186886861ECBF0840094C2DC /* ZFIOSPlatformUITests */,
+				1868865D1ECBF0830094C2DC /* Products */,
+				9775CA197C42672BB19AFB0A /* Pods */,
+				48234C92F3543602BB938236 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1868865D1ECBF0830094C2DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1868865C1ECBF0830094C2DC /* ZFIOSPlatform.app */,
+				186886781ECBF0830094C2DC /* ZFIOSPlatformTests.xctest */,
+				186886831ECBF0840094C2DC /* ZFIOSPlatformUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1868865E1ECBF0830094C2DC /* ZFIOSPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				186886621ECBF0830094C2DC /* AppDelegate.h */,
+				186886631ECBF0830094C2DC /* AppDelegate.m */,
+				186886651ECBF0830094C2DC /* ViewController.h */,
+				186886661ECBF0830094C2DC /* ViewController.m */,
+				186886681ECBF0830094C2DC /* Main.storyboard */,
+				1868866E1ECBF0830094C2DC /* Assets.xcassets */,
+				186886701ECBF0830094C2DC /* LaunchScreen.storyboard */,
+				186886731ECBF0830094C2DC /* Info.plist */,
+				1868866B1ECBF0830094C2DC /* ZFIOSPlatform.xcdatamodeld */,
+				1868865F1ECBF0830094C2DC /* Supporting Files */,
+			);
+			path = ZFIOSPlatform;
+			sourceTree = "<group>";
+		};
+		1868865F1ECBF0830094C2DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				186886601ECBF0830094C2DC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1868867B1ECBF0830094C2DC /* ZFIOSPlatformTests */ = {
+			isa = PBXGroup;
+			children = (
+				1868867C1ECBF0830094C2DC /* ZFIOSPlatformTests.m */,
+				1868867E1ECBF0840094C2DC /* Info.plist */,
+			);
+			path = ZFIOSPlatformTests;
+			sourceTree = "<group>";
+		};
+		186886861ECBF0840094C2DC /* ZFIOSPlatformUITests */ = {
+			isa = PBXGroup;
+			children = (
+				186886871ECBF0840094C2DC /* ZFIOSPlatformUITests.m */,
+				186886891ECBF0840094C2DC /* Info.plist */,
+			);
+			path = ZFIOSPlatformUITests;
+			sourceTree = "<group>";
+		};
+		48234C92F3543602BB938236 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F11A8BEC274AFB4D981498F2 /* Pods_ZFIOSPlatform.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9775CA197C42672BB19AFB0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				572F6762BB572668B7FBE264 /* Pods-ZFIOSPlatform.debug.xcconfig */,
+				DFAD6C3FF7827F9E45DF74B1 /* Pods-ZFIOSPlatform.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1868865B1ECBF0830094C2DC /* ZFIOSPlatform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1868868C1ECBF0840094C2DC /* Build configuration list for PBXNativeTarget "ZFIOSPlatform" */;
+			buildPhases = (
+				F3393CDAB20FF1A3A2941E4A /* [CP] Check Pods Manifest.lock */,
+				186886581ECBF0830094C2DC /* Sources */,
+				186886591ECBF0830094C2DC /* Frameworks */,
+				1868865A1ECBF0830094C2DC /* Resources */,
+				87556B4F2E98F0FDE336B4B6 /* [CP] Embed Pods Frameworks */,
+				33E12CB71422CB759675863B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZFIOSPlatform;
+			productName = ZFIOSPlatform;
+			productReference = 1868865C1ECBF0830094C2DC /* ZFIOSPlatform.app */;
+			productType = "com.apple.product-type.application";
+		};
+		186886771ECBF0830094C2DC /* ZFIOSPlatformTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1868868F1ECBF0840094C2DC /* Build configuration list for PBXNativeTarget "ZFIOSPlatformTests" */;
+			buildPhases = (
+				186886741ECBF0830094C2DC /* Sources */,
+				186886751ECBF0830094C2DC /* Frameworks */,
+				186886761ECBF0830094C2DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1868867A1ECBF0830094C2DC /* PBXTargetDependency */,
+			);
+			name = ZFIOSPlatformTests;
+			productName = ZFIOSPlatformTests;
+			productReference = 186886781ECBF0830094C2DC /* ZFIOSPlatformTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		186886821ECBF0840094C2DC /* ZFIOSPlatformUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 186886921ECBF0840094C2DC /* Build configuration list for PBXNativeTarget "ZFIOSPlatformUITests" */;
+			buildPhases = (
+				1868867F1ECBF0840094C2DC /* Sources */,
+				186886801ECBF0840094C2DC /* Frameworks */,
+				186886811ECBF0840094C2DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				186886851ECBF0840094C2DC /* PBXTargetDependency */,
+			);
+			name = ZFIOSPlatformUITests;
+			productName = ZFIOSPlatformUITests;
+			productReference = 186886831ECBF0840094C2DC /* ZFIOSPlatformUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		186886541ECBF0830094C2DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = COM.ZMF;
+				TargetAttributes = {
+					1868865B1ECBF0830094C2DC = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6F3XTCE8S9;
+						ProvisioningStyle = Automatic;
+					};
+					186886771ECBF0830094C2DC = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6F3XTCE8S9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1868865B1ECBF0830094C2DC;
+					};
+					186886821ECBF0840094C2DC = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6F3XTCE8S9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1868865B1ECBF0830094C2DC;
+					};
+				};
+			};
+			buildConfigurationList = 186886571ECBF0830094C2DC /* Build configuration list for PBXProject "ZFIOSPlatform" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 186886531ECBF0830094C2DC;
+			productRefGroup = 1868865D1ECBF0830094C2DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1868865B1ECBF0830094C2DC /* ZFIOSPlatform */,
+				186886771ECBF0830094C2DC /* ZFIOSPlatformTests */,
+				186886821ECBF0840094C2DC /* ZFIOSPlatformUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1868865A1ECBF0830094C2DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186886721ECBF0830094C2DC /* LaunchScreen.storyboard in Resources */,
+				1868866F1ECBF0830094C2DC /* Assets.xcassets in Resources */,
+				1868866A1ECBF0830094C2DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		186886761ECBF0830094C2DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		186886811ECBF0840094C2DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33E12CB71422CB759675863B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZFIOSPlatform/Pods-ZFIOSPlatform-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87556B4F2E98F0FDE336B4B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZFIOSPlatform/Pods-ZFIOSPlatform-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3393CDAB20FF1A3A2941E4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		186886581ECBF0830094C2DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186886671ECBF0830094C2DC /* ViewController.m in Sources */,
+				186886641ECBF0830094C2DC /* AppDelegate.m in Sources */,
+				1868866D1ECBF0830094C2DC /* ZFIOSPlatform.xcdatamodeld in Sources */,
+				186886611ECBF0830094C2DC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		186886741ECBF0830094C2DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1868867D1ECBF0830094C2DC /* ZFIOSPlatformTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1868867F1ECBF0840094C2DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186886881ECBF0840094C2DC /* ZFIOSPlatformUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1868867A1ECBF0830094C2DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1868865B1ECBF0830094C2DC /* ZFIOSPlatform */;
+			targetProxy = 186886791ECBF0830094C2DC /* PBXContainerItemProxy */;
+		};
+		186886851ECBF0840094C2DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1868865B1ECBF0830094C2DC /* ZFIOSPlatform */;
+			targetProxy = 186886841ECBF0840094C2DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		186886681ECBF0830094C2DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				186886691ECBF0830094C2DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		186886701ECBF0830094C2DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				186886711ECBF0830094C2DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1868868A1ECBF0840094C2DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1868868B1ECBF0840094C2DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1868868D1ECBF0840094C2DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 572F6762BB572668B7FBE264 /* Pods-ZFIOSPlatform.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6F3XTCE8S9;
+				INFOPLIST_FILE = ZFIOSPlatform/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZMF.ZFIOSPlatform.ZF;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1868868E1ECBF0840094C2DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFAD6C3FF7827F9E45DF74B1 /* Pods-ZFIOSPlatform.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6F3XTCE8S9;
+				INFOPLIST_FILE = ZFIOSPlatform/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZMF.ZFIOSPlatform.ZF;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		186886901ECBF0840094C2DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6F3XTCE8S9;
+				INFOPLIST_FILE = ZFIOSPlatformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZMF.ZFIOSPlatformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZFIOSPlatform.app/ZFIOSPlatform";
+			};
+			name = Debug;
+		};
+		186886911ECBF0840094C2DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6F3XTCE8S9;
+				INFOPLIST_FILE = ZFIOSPlatformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZMF.ZFIOSPlatformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZFIOSPlatform.app/ZFIOSPlatform";
+			};
+			name = Release;
+		};
+		186886931ECBF0840094C2DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6F3XTCE8S9;
+				INFOPLIST_FILE = ZFIOSPlatformUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZMF.ZFIOSPlatformUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZFIOSPlatform;
+			};
+			name = Debug;
+		};
+		186886941ECBF0840094C2DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6F3XTCE8S9;
+				INFOPLIST_FILE = ZFIOSPlatformUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZMF.ZFIOSPlatformUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZFIOSPlatform;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		186886571ECBF0830094C2DC /* Build configuration list for PBXProject "ZFIOSPlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1868868A1ECBF0840094C2DC /* Debug */,
+				1868868B1ECBF0840094C2DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1868868C1ECBF0840094C2DC /* Build configuration list for PBXNativeTarget "ZFIOSPlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1868868D1ECBF0840094C2DC /* Debug */,
+				1868868E1ECBF0840094C2DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1868868F1ECBF0840094C2DC /* Build configuration list for PBXNativeTarget "ZFIOSPlatformTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				186886901ECBF0840094C2DC /* Debug */,
+				186886911ECBF0840094C2DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		186886921ECBF0840094C2DC /* Build configuration list for PBXNativeTarget "ZFIOSPlatformUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				186886931ECBF0840094C2DC /* Debug */,
+				186886941ECBF0840094C2DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1868866B1ECBF0830094C2DC /* ZFIOSPlatform.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1868866C1ECBF0830094C2DC /* ZFIOSPlatform.xcdatamodel */,
+			);
+			currentVersion = 1868866C1ECBF0830094C2DC /* ZFIOSPlatform.xcdatamodel */;
+			path = ZFIOSPlatform.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 186886541ECBF0830094C2DC /* Project object */;
+}

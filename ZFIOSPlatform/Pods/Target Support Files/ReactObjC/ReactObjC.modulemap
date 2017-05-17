@@ -1,0 +1,6 @@
+framework module ReactObjC {
+  umbrella header "ReactObjC-umbrella.h"
+
+  export *
+  module * { export * }
+}

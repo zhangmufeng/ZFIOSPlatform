@@ -1,0 +1,6 @@
+framework module Pods_ZFIOSPlatform {
+  umbrella header "Pods-ZFIOSPlatform-umbrella.h"
+
+  export *
+  module * { export * }
+}
