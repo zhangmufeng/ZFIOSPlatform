@@ -113,6 +113,7 @@
 		180465971ECBF3C4008996E3 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		180465991ECBF3D4008996E3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		1804659B1ECBF3FC008996E3 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		1804659D1ECBFBC1008996E3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		1868865C1ECBF0830094C2DC /* ZFIOSPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZFIOSPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186886601ECBF0830094C2DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		186886691ECBF0830094C2DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -182,11 +183,11 @@
 			children = (
 				180465261ECBF298008996E3 /* AppData */,
 				1804652E1ECBF298008996E3 /* ZFBase */,
+				1804655B1ECBF298008996E3 /* ZFMain */,
 				180465361ECBF298008996E3 /* ZFClass */,
 				1804653C1ECBF298008996E3 /* ZFFunction */,
-				1804655B1ECBF298008996E3 /* ZFMain */,
-				180465631ECBF298008996E3 /* ZFOther */,
 				180465691ECBF298008996E3 /* ZFUI */,
+				180465631ECBF298008996E3 /* ZFOther */,
 			);
 			path = ZFClass;
 			sourceTree = "<group>";
@@ -206,6 +207,7 @@
 			children = (
 				180465281ECBF298008996E3 /* AppDelegate.h */,
 				180465291ECBF298008996E3 /* AppDelegate.m */,
+				1804659D1ECBFBC1008996E3 /* PrefixHeader.pch */,
 			);
 			path = ZFApp;
 			sourceTree = "<group>";
@@ -334,10 +336,10 @@
 		180465441ECBF298008996E3 /* ZFMap */ = {
 			isa = PBXGroup;
 			children = (
+				1804654A1ECBF298008996E3 /* ZFMapFactory */,
 				180465451ECBF298008996E3 /* Controller */,
 				180465481ECBF298008996E3 /* Model */,
 				180465491ECBF298008996E3 /* View */,
-				1804654A1ECBF298008996E3 /* ZFMapFactory */,
 			);
 			path = ZFMap;
 			sourceTree = "<group>";
@@ -570,11 +572,6 @@
 			isa = PBXGroup;
 			children = (
 				180465251ECBF298008996E3 /* ZFClass */,
-				186886681ECBF0830094C2DC /* Main.storyboard */,
-				1868866E1ECBF0830094C2DC /* Assets.xcassets */,
-				186886701ECBF0830094C2DC /* LaunchScreen.storyboard */,
-				186886731ECBF0830094C2DC /* Info.plist */,
-				1868866B1ECBF0830094C2DC /* ZFIOSPlatform.xcdatamodeld */,
 				1868865F1ECBF0830094C2DC /* Supporting Files */,
 			);
 			path = ZFIOSPlatform;
@@ -583,6 +580,11 @@
 		1868865F1ECBF0830094C2DC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				186886681ECBF0830094C2DC /* Main.storyboard */,
+				1868866E1ECBF0830094C2DC /* Assets.xcassets */,
+				186886701ECBF0830094C2DC /* LaunchScreen.storyboard */,
+				186886731ECBF0830094C2DC /* Info.plist */,
+				1868866B1ECBF0830094C2DC /* ZFIOSPlatform.xcdatamodeld */,
 				186886601ECBF0830094C2DC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -993,6 +995,7 @@
 					"$(PROJECT_DIR)/ZFIOSPlatform/ZFClass/ZFFunction/ZFMap/ZFMapFactory/Librarys/BaiDu",
 					"$(PROJECT_DIR)/ZFIOSPlatform/ZFClass/ZFFunction/ZFMap/ZFMapFactory/Librarys/GaoDe",
 				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZFIOSPlatform/ZFClass/AppData/ZFApp/PrefixHeader.pch";
 				INFOPLIST_FILE = ZFIOSPlatform/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1016,6 +1019,7 @@
 					"$(PROJECT_DIR)/ZFIOSPlatform/ZFClass/ZFFunction/ZFMap/ZFMapFactory/Librarys/BaiDu",
 					"$(PROJECT_DIR)/ZFIOSPlatform/ZFClass/ZFFunction/ZFMap/ZFMapFactory/Librarys/GaoDe",
 				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZFIOSPlatform/ZFClass/AppData/ZFApp/PrefixHeader.pch";
 				INFOPLIST_FILE = ZFIOSPlatform/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

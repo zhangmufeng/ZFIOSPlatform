@@ -19,9 +19,11 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];
     self.title = @"地图";
-    ZFMapFactory *factory = [[ZFMapFactory alloc] initWithType:0];
+    
+    ZFMapFactory *factory = [[ZFMapFactory alloc] initWithType:1];
     UIView* mapView = [factory viewsFormZFMapFactoryWithFrame:self.view.frame];
     [self.view addSubview:mapView];
+
 }
 
 - (void)didReceiveMemoryWarning {

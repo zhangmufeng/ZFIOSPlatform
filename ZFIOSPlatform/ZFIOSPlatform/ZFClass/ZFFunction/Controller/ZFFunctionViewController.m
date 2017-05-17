@@ -21,8 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSourceArr = @[@"地图", @"支付",];
+    self.dataSourceArr = @[@"地图", @"支付",@"没有",@"没有",@"没有",@"没有",@"没有",@"没有",@"没有",@"没有",@"没有",@"没有",@"没有",@"没有",@"没有",@"没有"];
     ZFFunctionTableView *functionTableView = [[ZFFunctionTableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
+    functionTableView.rowHeight = 60;
     [functionTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kFunctionCellID];
     self.view = functionTableView;
     functionTableView.delegate = self;
@@ -42,8 +43,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     switch (indexPath.row) {
+            
         case 0: {
             ZFMapViewController *mapViewController = [ZFMapViewController new];
+            mapViewController.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:mapViewController animated:YES];
             break;
         }
@@ -51,6 +54,12 @@
             
             break;
             
+        case 2:
+            
+            break;
+        case 3:
+            
+            break;
         default:
             break;
     }
