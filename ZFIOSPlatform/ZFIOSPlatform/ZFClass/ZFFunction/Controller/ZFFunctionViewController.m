@@ -14,20 +14,35 @@
 
 @interface ZFFunctionViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) NSArray *dataSourceArr;
-
+@property (strong, nonatomic) ZFFunctionTableView *functionTableView;
 @end
 
 @implementation ZFFunctionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSourceArr = @[@"地图", @"支付",@"没有",@"没有",@"没有",@"没有",@"没有",@"没有",@"没有",@"没有",@"没有",@"没有",@"没有",@"没有",@"没有",@"没有"];
-    ZFFunctionTableView *functionTableView = [[ZFFunctionTableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
-    functionTableView.rowHeight = 60;
-    [functionTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kFunctionCellID];
-    self.view = functionTableView;
-    functionTableView.delegate = self;
-    functionTableView.dataSource = self;
+    self.dataSourceArr = @[@"ZFMap",
+                           @"ZFPay",
+                           @"No Data",
+                           @"No Data",
+                           @"No Data",
+                           @"No Data",
+                           @"No Data",
+                           @"No Data",
+                           @"No Data",
+                           @"No Data",
+                           @"No Data",
+                           @"No Data",
+                           @"No Data",
+                           @"No Data",
+                           @"No Data",
+                           @"No Data"];
+    self.functionTableView = [[ZFFunctionTableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
+    self.functionTableView.rowHeight = 60;
+    [self.functionTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kFunctionCellID];
+    self.view = self.functionTableView;
+    self.functionTableView.delegate = self;
+    self.functionTableView.dataSource = self;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -48,18 +63,18 @@
             ZFMapViewController *mapViewController = [ZFMapViewController new];
             mapViewController.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:mapViewController animated:YES];
-            break;
-        }
-        case 1:
+            } break;
+        
+        case 1: {
             
-            break;
+        } break;
             
-        case 2:
+        case 2: {
             
-            break;
-        case 3:
+        } break;
+        case 3:{
             
-            break;
+        } break;
         default:
             break;
     }

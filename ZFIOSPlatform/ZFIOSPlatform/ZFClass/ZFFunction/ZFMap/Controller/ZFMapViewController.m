@@ -8,6 +8,7 @@
 
 #import "ZFMapViewController.h"
 #import "ZFMapFactory.h"
+#import "ZFMapTabBarControler.h"
 
 @interface ZFMapViewController ()
 
@@ -19,6 +20,11 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];
     self.title = @"地图";
+    
+    
+   
+    
+    
     
     ZFMapFactory *factory = [[ZFMapFactory alloc] initWithType:1];
     UIView* mapView = [factory viewsFormZFMapFactoryWithFrame:self.view.frame];

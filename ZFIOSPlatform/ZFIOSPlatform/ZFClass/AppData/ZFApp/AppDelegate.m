@@ -13,17 +13,22 @@
 @end
 
 @implementation AppDelegate
-// 百度 9654656 ZFIOSPlatform R2I4V1hYh2ylwLNXU6jE4i3eUCXvIdft	iOS端
+// 百度 9654656 ZFIOSPlatform UjXgp1n2GdTHlPCmorhvNgvCN0Avqu9C	iOS端
 // 高德 ZFIOSPlatform	191303aed90341967c09eab95caa9250	iOS平台	
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window setBackgroundColor:[UIColor whiteColor]];
     self.window.rootViewController = [[NSClassFromString(@"ZFTabBarController") alloc] init];
+    
+//    self.window.rootViewController = [[NSClassFromString(@"ZFMapTabBarControler") alloc] init];
     [self.window makeKeyAndVisible];
     return YES;
 }
 
++ (AppDelegate *)appDelegate {
+    return (AppDelegate *)[UIApplication sharedApplication].delegate;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

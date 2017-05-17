@@ -18,19 +18,20 @@
 @end
 
 @implementation ZFMapFactory
+
 - (instancetype)initWithType:(NSInteger)type {
     if (self = [super init]) {
-        //枚举也是可以(自己去改)
+        
         _type = type;
         if (_type == 0) {
             BMKMapManager* _mapManager = [[BMKMapManager alloc]init];
             // 如果要关注网络及授权验证事件，请设定     generalDelegate参数
-            BOOL ret = [_mapManager start:@"R2I4V1hYh2ylwLNXU6jE4i3eUCXvIdft"  generalDelegate:nil];
+            BOOL ret = [_mapManager start:@"UjXgp1n2GdTHlPCmorhvNgvCN0Avqu9C"  generalDelegate:nil];
             if (!ret) {
                 NSLog(@"manager start failed!");
             }
         }else if(_type == 1){
-            [AMapServices sharedServices].apiKey =@"191303aed90341967c09eab95caa9250";
+            [AMapServices sharedServices].apiKey =@"190787b38db66a7aecfa8b9cd83ea071";
         }
 
     }
@@ -53,8 +54,6 @@
         case 3:
             _mapView = [[MAMapView alloc] initWithFrame:frame];
             break;
-            
-            
         default:
             break;
     }

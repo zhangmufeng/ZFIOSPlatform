@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ZFFunctionTableView : UITableView
+#import "ZFBaseTableView.h"
+@interface ZFFunctionTableView : ZFBaseTableView
 
 @end

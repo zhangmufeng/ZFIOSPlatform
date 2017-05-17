@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ZFMapFactory : NSObject
+
 - (instancetype)initWithType:(NSInteger)type;
+
 - (UIView *)viewsFormZFMapFactoryWithFrame:(CGRect)frame;
+
 @end

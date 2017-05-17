@@ -1,0 +1,13 @@
+//
+//  ZFAppData.h
+//  ZFIOSPlatform
+//
+//  Created by 张木锋 on 2017/5/17.
+//  Copyright © 2017年 COM.ZMF. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface ZFAppData : NSObject
++(ZFAppData *)sharedAppData;
+@end

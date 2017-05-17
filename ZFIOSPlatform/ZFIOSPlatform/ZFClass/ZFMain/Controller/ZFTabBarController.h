@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ZFTabBarController : UITabBarController
+#import "ZFBaseTabBarController.h"
+@interface ZFTabBarController : ZFBaseTabBarController
 
 @end

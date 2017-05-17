@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZFBaseNavigationController.h"
 
-@interface ZFNavigationController : UINavigationController
+@interface ZFNavigationController : ZFBaseNavigationController
 
 @end
