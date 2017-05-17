@@ -21,11 +21,10 @@
 
 - (instancetype)initWithType:(NSInteger)type {
     if (self = [super init]) {
-        
+        BMKMapManager* _mapManager = [[BMKMapManager alloc]init];
         _type = type;
-        if (_type == 0) {
-            BMKMapManager* _mapManager = [[BMKMapManager alloc]init];
-            // 如果要关注网络及授权验证事件，请设定     generalDelegate参数
+        if (_type == 0) {  // 如果要关注网络及授权验证事件，请设定     generalDelegate参数
+            
             BOOL ret = [_mapManager start:@"UjXgp1n2GdTHlPCmorhvNgvCN0Avqu9C"  generalDelegate:nil];
             if (!ret) {
                 NSLog(@"manager start failed!");
@@ -39,6 +38,7 @@
 }
 
 - (UIView *)viewsFormZFMapFactoryWithFrame:(CGRect)frame {
+    
     switch (_type) {
         case 0:
             if (_mapView == nil) {
