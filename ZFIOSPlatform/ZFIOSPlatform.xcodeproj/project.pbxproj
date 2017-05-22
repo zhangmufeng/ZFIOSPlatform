@@ -57,6 +57,7 @@
 		186886721ECBF0830094C2DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186886701ECBF0830094C2DC /* LaunchScreen.storyboard */; };
 		1868867D1ECBF0830094C2DC /* ZFIOSPlatformTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868867C1ECBF0830094C2DC /* ZFIOSPlatformTests.m */; };
 		186886881ECBF0840094C2DC /* ZFIOSPlatformUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 186886871ECBF0840094C2DC /* ZFIOSPlatformUITests.m */; };
+		18842A421ECD3CB200F09C9C /* ZFOtherTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18842A411ECD3CB200F09C9C /* ZFOtherTableView.m */; };
 		45F8B2C4348E76FC2E571BE3 /* Pods_ZFIOSPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F11A8BEC274AFB4D981498F2 /* Pods_ZFIOSPlatform.framework */; };
 /* End PBXBuildFile section */
 
@@ -158,6 +159,8 @@
 		186886831ECBF0840094C2DC /* ZFIOSPlatformUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZFIOSPlatformUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		186886871ECBF0840094C2DC /* ZFIOSPlatformUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFIOSPlatformUITests.m; sourceTree = "<group>"; };
 		186886891ECBF0840094C2DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18842A401ECD3CB200F09C9C /* ZFOtherTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFOtherTableView.h; sourceTree = "<group>"; };
+		18842A411ECD3CB200F09C9C /* ZFOtherTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFOtherTableView.m; sourceTree = "<group>"; };
 		572F6762BB572668B7FBE264 /* Pods-ZFIOSPlatform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFIOSPlatform.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZFIOSPlatform/Pods-ZFIOSPlatform.debug.xcconfig"; sourceTree = "<group>"; };
 		DFAD6C3FF7827F9E45DF74B1 /* Pods-ZFIOSPlatform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFIOSPlatform.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZFIOSPlatform/Pods-ZFIOSPlatform.release.xcconfig"; sourceTree = "<group>"; };
 		F11A8BEC274AFB4D981498F2 /* Pods_ZFIOSPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZFIOSPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -558,6 +561,8 @@
 		180465681ECBF298008996E3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18842A401ECD3CB200F09C9C /* ZFOtherTableView.h */,
+				18842A411ECD3CB200F09C9C /* ZFOtherTableView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -955,6 +960,7 @@
 				183451441ECC2F740001D7E8 /* ZFBaseTableView.m in Sources */,
 				180465721ECBF298008996E3 /* ZFClassViewController.m in Sources */,
 				183451381ECC22FD0001D7E8 /* ZFBaseTabBarController.m in Sources */,
+				18842A421ECD3CB200F09C9C /* ZFOtherTableView.m in Sources */,
 				180465701ECBF298008996E3 /* ZFBaseTableViewController.m in Sources */,
 				1834513B1ECC24DC0001D7E8 /* ZFMapTabBarControler.m in Sources */,
 				1804657F1ECBF298008996E3 /* ZFOtherViewController.m in Sources */,
