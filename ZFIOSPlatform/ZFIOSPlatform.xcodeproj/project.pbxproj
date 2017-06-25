@@ -232,6 +232,7 @@
 				180465271ECBF298008996E3 /* ZFApp */,
 				1804652A1ECBF298008996E3 /* ZFMacros */,
 				1804652C1ECBF298008996E3 /* ZFURL */,
+				18ED4F131ED29227004023C4 /* ZFTools */,
 			);
 			path = AppData;
 			sourceTree = "<group>";
@@ -728,6 +729,13 @@
 				186886891ECBF0840094C2DC /* Info.plist */,
 			);
 			path = ZFIOSPlatformUITests;
+			sourceTree = "<group>";
+		};
+		18ED4F131ED29227004023C4 /* ZFTools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZFTools;
 			sourceTree = "<group>";
 		};
 		48234C92F3543602BB938236 /* Frameworks */ = {

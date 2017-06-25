@@ -20,8 +20,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window setBackgroundColor:[UIColor whiteColor]];
     self.window.rootViewController = [[NSClassFromString(@"ZFTabBarController") alloc] init];
-    
-//    self.window.rootViewController = [[NSClassFromString(@"ZFMapTabBarControler") alloc] init];
     [self.window makeKeyAndVisible];
     return YES;
 }

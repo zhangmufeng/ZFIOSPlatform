@@ -7,6 +7,7 @@
 //
 
 #import "ZFGaoDeMapViewController.h"
+#import "ZFMapFactory.h"
 
 @interface ZFGaoDeMapViewController ()
 
@@ -16,7 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor blueColor];
+    self.navigationItem.title  = @"高德地图";
+    
+    ZFMapFactory *factory = [[ZFMapFactory alloc] initWithType:1];
+    UIView* mapView = [factory viewsFormZFMapFactoryWithFrame:self.view.frame];
+    [self.view addSubview:mapView];
 }
 
 - (void)didReceiveMemoryWarning {

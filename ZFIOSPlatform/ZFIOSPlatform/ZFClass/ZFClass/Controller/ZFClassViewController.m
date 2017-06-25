@@ -18,8 +18,8 @@
 @property (strong, nonatomic) NSMutableArray *sectionDataArr; // 组数
 @property (strong, nonatomic) NSMutableArray *rowDataArr;     // 每组行数
 @property (strong, nonatomic) NSMutableArray *stateArr;       // 状态数组
-@property (strong, nonatomic) NSMutableArray *nsDataArr; // NS
-@property (strong, nonatomic) NSMutableArray *uiDataArr;     // UI
+@property (strong, nonatomic) NSMutableArray *nsDataArr;      // NS
+@property (strong, nonatomic) NSMutableArray *uiDataArr;      // UI
 @end
 
 @implementation ZFClassViewController

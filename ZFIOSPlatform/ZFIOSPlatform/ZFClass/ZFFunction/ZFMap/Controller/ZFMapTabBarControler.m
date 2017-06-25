@@ -17,27 +17,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.hidesBackButton = YES;
     [self addSubViewControllers];
+    
 }
 
 - (void)addSubViewControllers {
     
     UIViewController *baiDuMap = [self loadChildViewControllerWithClassName:@"ZFBaiDuMapViewController" andTitle:@"ZFBaiDuMap" andImageName:@"icon_file_word"];
-    UIViewController *gaoDeMap = [self loadChildViewControllerWithClassName:@"ZFFunctionViewController" andTitle:@"ZFGaoDeMap" andImageName:@"icon_file_excel"];
+    UIViewController *gaoDeMap = [self loadChildViewControllerWithClassName:@"ZFGaoDeMapViewController" andTitle:@"ZFGaoDeMap" andImageName:@"icon_file_excel"];
 
-    self.viewControllers = @[baiDuMap, gaoDeMap];
+    [self setViewControllers:@[baiDuMap, gaoDeMap] animated:YES];
     
-    self.tabBar.translucent = NO;
+//    self.tabBar.translucent = NO;
 }
 
 - (UIViewController *)loadChildViewControllerWithClassName:(NSString *)className andTitle:(NSString *)title andImageName:(NSString *)imageName {
+    
     UIViewController *viewController = [[NSClassFromString(className) alloc] init];
     viewController.title = title;
     viewController.tabBarItem.image = [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     NSString *selectedImageName = [imageName stringByAppendingString:@""];
     viewController.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    viewController.view.backgroundColor =  [UIColor whiteColor];
-    
+//    viewController.view.backgroundColor =  [UIColor whiteColor];
     return [[ZFMapNavigationController alloc] initWithRootViewController:viewController];
 }
 

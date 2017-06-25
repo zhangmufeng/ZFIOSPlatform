@@ -7,6 +7,7 @@
 //
 
 #import "ZFBaiDuMapViewController.h"
+#import "ZFMapFactory.h"
 
 @interface ZFBaiDuMapViewController ()
 
@@ -16,7 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor redColor];
+    self.navigationItem.title = @"百度地图";
+    
+    ZFMapFactory *factory = [[ZFMapFactory alloc] initWithType:0];
+    UIView* mapView = [factory viewsFormZFMapFactoryWithFrame:self.view.frame];
+    [self.view addSubview:mapView];
 }
 
 - (void)didReceiveMemoryWarning {

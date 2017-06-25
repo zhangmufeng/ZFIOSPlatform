@@ -27,8 +27,8 @@
     UIViewController *functionVC = [self loadChildViewControllerWithClassName:@"ZFFunctionViewController" andTitle:@"Function" andImageName:@"icon_file_excel"];
     UIViewController *uiVC = [self loadChildViewControllerWithClassName:@"ZFUIViewController" andTitle:@"UI" andImageName:@"icon_file_ppt"];
     UIViewController *otherVC = [self loadChildViewControllerWithClassName:@"ZFOtherViewController" andTitle:@"Other" andImageName:@"icon_file_other"];
-    self.viewControllers = @[classVC, functionVC, uiVC, otherVC];
-    
+
+    [self setViewControllers:@[classVC, functionVC, uiVC, otherVC] animated:YES];
     self.tabBar.translucent = NO;
 }
 

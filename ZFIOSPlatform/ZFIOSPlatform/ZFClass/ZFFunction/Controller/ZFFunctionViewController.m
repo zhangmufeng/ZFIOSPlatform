@@ -9,6 +9,7 @@
 #import "ZFFunctionViewController.h"
 #import "ZFFunctionTableView.h"
 #import "ZFMapViewController.h"
+#import "ZFMapTabBarControler.h"
 
 #define kFunctionCellID  @"FunctionCellID"
 
@@ -60,9 +61,12 @@
     switch (indexPath.row) {
             
         case 0: {
-            ZFMapViewController *mapViewController = [ZFMapViewController new];
-            mapViewController.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:mapViewController animated:YES];
+//            ZFMapViewController *mapViewController = [ZFMapViewController new];
+//            mapViewController.hidesBottomBarWhenPushed = YES;
+//            [self.navigationController pushViewController:mapViewController animated:YES];
+            ZFMapTabBarControler *mapTabBarControler = [ZFMapTabBarControler new];
+            mapTabBarControler.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:mapTabBarControler animated:YES];
             } break;
         
         case 1: {
